@@ -1,9 +1,11 @@
 <div class="col-md-3" id="<?php print($midwife_id) ?>">
 	<h2><?php print($midwife['name']); ?></h2>
-	<p class="address"><?php print($midwife['addr1']); ?><br/><?php print($midwife['addr2']); ?></p>
-	<p class="phone"><?php print($midwife['phone']); ?></p>
-	<p class="fax"><?php print($midwife['fax']); ?></p>
-	<a class="email"><a href="mailto:<?php print($midwife['email']); ?>"><?php print($midwife['email']); ?></a>
-	<a class="web"><a href="http://<?php print($midwife['web']); ?>"><?php print($midwife['web']); ?></a>
+	<p class="address"><span class="glyphicon glyphicon-home"></span>&nbsp;<?php print($midwife['addr1']); ?><br/><?php print($midwife['addr2']); ?></p>
+	<p class="phone"><span class="glyphicon glyphicon-earphone"></span>&nbsp;<?php print($midwife['phone']); ?></p>
+	<?php if (isset($midwife['fax'])): ?>
+		<p class="fax"><span class="glyphicon glyphicon-print"></span>&nbsp;<?php print($midwife['fax']); ?></p>
+	<?php endif; ?>
+	<p class="email"><span class="glyphicon glyphicon-envelope"></span>&nbsp;<a href="mailto:<?php print($midwife['email']); ?>"><?php print($midwife['email']); ?></a></p>
+	<p class="web"><span class="glyphicon glyphicon-globe"></span>&nbsp;<a href="http://<?php print($midwife['web']); ?>"><?php print($midwife['web']); ?></a></p>
 	<p class="tag"><?php print($midwife['tag']); ?>
 </div>
