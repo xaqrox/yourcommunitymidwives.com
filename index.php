@@ -60,6 +60,9 @@ while ($midwife_filename = readdir($midwives)) {
 	// Include the midwife template, which assumes the array built above.
 	include('midwife.tpl.php');
 
+	// Get rid of leftover values in case the next midwife doesn't use some fields.
+	unset($midwife);
+
 	// Increment the counter.
 	$i = $i + 1;
 
