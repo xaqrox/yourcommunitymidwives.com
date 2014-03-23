@@ -11,12 +11,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
 
@@ -27,39 +21,56 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Your Community Midwives</h1>
-	<p>Proud sponsors of <strong>Call the Midwife</strong>.</p>
-        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
-      </div>
-    </div>
 
     <div class="container">
       <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
+<?php
 
-      <hr>
+// Open midwives directory.
+$midwives = opendir('midwives');
+// Initialize counter.
+$i = 0;
 
-      <footer>
-        <p>&copy; Company 2014</p>
-      </footer>
+while ($midwife_filename = readdir($midwives)) {
+	// If not a text file, go to the next file.
+	if (strpos($midwife_filename, 'txt') === FALSE) {
+		continue;
+	}
+
+	// On the first go around and every fourth after, start a new row.
+	if ($i % 4 == 0) { ?> <div class="row"> <?php }
+
+	// Get the id by stripping off the file extension.
+	$midwife_id = array_shift(explode('.', $midwife_filename));
+	
+	// Open a file hadler for this midwife file.
+	$midwife_file = fopen('midwives/' . $midwife_filename, 'r');
+
+	// For each line in the midwife file,
+	while ($line = fgets($midwife_file)) {
+		// split it into a field name and a value,
+		$pair = explode(':', $line);
+		$field = $pair[0];
+		$value = $pair[1];
+		// and store it in an array.
+		$midwife[$field] = $value;
+	}
+	fclose($midwife_file);
+
+	// Include the midwife template, which assumes the array built above.
+	include('midwife.tpl.php');
+
+	// Increment the counter.
+	$i = $i + 1;
+
+	// Check if a new row is about to start, and end this row.
+	if ($i % 4 == 0) { ?> </div> <?php }
+}
+closedir($midwives);
+
+// If the last row ended on a number not divisible by 4, end the row.
+if ($i % 4 != 0) { ?> </div> <?php }
+?>
     </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 
