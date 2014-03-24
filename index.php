@@ -74,6 +74,12 @@ closedir($midwives);
 // If the last row ended on a number not divisible by 4, end the row.
 if ($i % 4 != 0) { ?> </div> <?php }
 ?>
+      <hr>
+
+      <footer>
+	<p>Much love to <a href="http://glyphicons.com">Glyphicons</a></p>
+	<p>Made with&nbsp;<span class="glyphicon glyphicon-heart"></span>&nbsp;by <a href="http://xaqrox.com">XAQ</a></p>
+      </footer>
     </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 
