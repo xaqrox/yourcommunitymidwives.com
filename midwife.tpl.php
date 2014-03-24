@@ -1,6 +1,10 @@
 <div class="col-md-3" id="<?php print($midwife_id) ?>">
 	<h2><?php print($midwife['name']); ?></h2>
 
+	<?php if (isset($midwife['img'])): ?>
+		<img class="img-responsive" src="midwives/logo/<?php print($midwife['img']); ?>" />
+	<?php endif; ?>
+
 	<div class="address">
 		<span class="glyphicon glyphicon-home">&nbsp;</span>
 		<address>
