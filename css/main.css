@@ -1,3 +1,7 @@
 .tag {
 	font-style: italic;
 }
+
+.address * {
+	float: left;
+}
