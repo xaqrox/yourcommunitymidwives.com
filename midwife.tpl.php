@@ -9,5 +9,5 @@
 	<?php if (isset($midwife['web'])): ?>
 		<p class="web"><span class="glyphicon glyphicon-globe"></span>&nbsp;<a href="http://<?php print($midwife['web']); ?>"><?php print($midwife['web']); ?></a></p>
 	<?php endif; ?>
-	<p class="tag"><?php print($midwife['tag']); ?>
+	<p class="tag"><span class="glyphicon glyphicon-comment"></span>&nbsp;<?php print($midwife['tag']); ?>
 </div>
