@@ -6,3 +6,4 @@ fax:888-770-0243
 email:novabirthcenter@gmail.com
 web:www.novabirthcenter.com
 tag:Welcome your baby naturally! Birth in water, the comfort of your home in our beautiful birth center.
+img:nova.jpg

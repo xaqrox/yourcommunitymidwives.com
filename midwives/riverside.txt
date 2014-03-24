@@ -6,3 +6,4 @@ fax:304-725-6516
 email:riversidemidwifery@gmail.com
 web:www.riversidemidwifery.com
 tag:Midwives offering woman-centered home birth and well woman care in Western Maryland, Northern Virginia, and West Virginia.
+img:riverside.png
