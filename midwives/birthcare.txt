@@ -1,0 +1,9 @@
+name:BirthCare & Women’s Health, Ltd
+addr1:1501 King St
+addr2:Alexandria, VA 22314
+phone:703-549-5070
+fax:703-549-4821
+email:midwives@birthcare.org
+web:www.birthcare.org
+tag:Since 1987...specializing in personalized GYN care and happy birth days in your home or our Accredited Birth Center (serving a 40mile radius of DC)
+img:birthcare.jpg
