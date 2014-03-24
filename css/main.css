@@ -5,3 +5,7 @@
 .address * {
 	float: left;
 }
+
+img {
+	margin-bottom: 10px;
+}
