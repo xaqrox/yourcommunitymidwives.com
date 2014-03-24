@@ -1,8 +1,10 @@
 <div class="col-md-3" id="<?php print($midwife_id) ?>">
-	<h2><?php print($midwife['name']); ?></h2>
+	<h2><a href="http://<?php print($midwife['web']); ?>"><?php print($midwife['name']); ?></a></h2>
 
 	<?php if (isset($midwife['img'])): ?>
-		<img class="img-responsive" src="midwives/logo/<?php print($midwife['img']); ?>" />
+		<a href="http://<?php print($midwife['web']); ?>">
+			<img class="img-responsive" src="midwives/logo/<?php print($midwife['img']); ?>" />
+		</a>
 	<?php endif; ?>
 
 	<div class="address">
