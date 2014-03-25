@@ -12,7 +12,7 @@
 
 	<div class="address">
 		<span class="glyphicon glyphicon-home">&nbsp;</span>
-		<address>
+		<address class="small">
 			<?php print($midwife['addr1']); ?>
 			<br/>
 			<?php if (isset($midwife['addr2'])): ?>
@@ -22,35 +22,35 @@
 	</div>
 	<div class="clearfix"></div>
 
-	<div class="phone">
+	<div class="phone small">
 		<p>
 			<span class="glyphicon glyphicon-earphone">&nbsp;</span><?php print($midwife['phone']); ?>
 		</p>
 	</div>
 
 	<?php if (isset($midwife['fax'])): ?>
-		<div class="fax">
+		<div class="fax small">
 			<p>
 				<span class="glyphicon glyphicon-print">&nbsp;</span><?php print($midwife['fax']); ?>
 			</p>
 		</div>
 	<?php endif; ?>
 
-	<div class="email">
+	<div class="email small">
 		<p>
 			<span class="glyphicon glyphicon-envelope">&nbsp;</span><a href="mailto:<?php print($midwife['email']); ?>"><?php print($midwife['email']); ?></a>
 		</p>
 	</div>
 
 	<?php if (isset($midwife['web'])): ?>
-		<div class="web">
+		<div class="web small">
 			<p>
 				<span class="glyphicon glyphicon-globe">&nbsp;</span><a href="http://<?php print($midwife['web']); ?>"><?php print($midwife['web']); ?></a>
 			</p>
 		</div>
 	<?php endif; ?>
 
-	<div class="tag">
+	<div class="tag small">
 		<p>
 			<span class="glyphicon glyphicon-comment">&nbsp;</span><?php print($midwife['tag']); ?>
 		</p>
