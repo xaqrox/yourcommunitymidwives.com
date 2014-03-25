@@ -23,11 +23,11 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="container">
 	<div class="row">
-		<h1 class="col-md-12 text-center">
-		Your Community Midwives<small class="pull-right">beta</small>
-		<br>
-		<small>Proud sponsors of <a href="http://www.pbs.org/call-the-midwife/home/">Call the Midwife</a> on <a href="http://www.mpt.org/home/">Maryland Public Television</a>.</small>
-		</h1>
+		<div class="col-md-12 text-center small">
+			<small class="pull-right">beta</small>
+			<h1>Your Community Midwives</h1>
+			<em>Proud sponsors of <a href="http://www.pbs.org/call-the-midwife/home/">Call the Midwife</a> on <a href="http://www.mpt.org/home/">Maryland Public Television</a>.</em>
+		</div>
 	</div>
       <!-- Example row of columns -->
 <?php
