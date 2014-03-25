@@ -24,7 +24,7 @@
 <div class="container">
 	<div class="row">
 		<h1 class="col-md-12 text-center">
-		Your Community Midwives
+		Your Community Midwives<small class="pull-right">beta</small>
 		<br>
 		<small>Proud sponsors of <a href="http://www.pbs.org/call-the-midwife/home/">Call the Midwife</a> on <a href="http://www.mpt.org/home/">Maryland Public Television</a>.</small>
 		</h1>
@@ -86,7 +86,7 @@ if ($i % 4 != 0) { ?> </div> <?php }
 	<ul class="list-inline">
 		<li>Icons by <a href="http://glyphicons.com">Glyphicons</a></li>
 		<li>Made with&nbsp;<span class="glyphicon glyphicon-heart"></span>&nbsp;by <a href="http://xaqrox.com">XAQ</a></li>
-		<li>Version 0.2 (<a href="https://github.com/xaqrox/yourcommunitymidwives.com/tree/0.2" target="_blank">View on GitHub</a>)</li>
+		<li>Version 1.beta (<a href="https://github.com/xaqrox/yourcommunitymidwives.com/tree/1.beta" target="_blank">View on GitHub</a>)</li>
 	</ul>
       </footer>
     </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
