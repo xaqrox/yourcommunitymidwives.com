@@ -1,0 +1,9 @@
+name:Special Beginnings Birth & Women’s Center
+addr1:1454 Baltimore Annapolis Boulevard
+addr2:Arnold, MD 21012
+phone:410-626-8982
+web:www.specialbeginnings.com
+email:contact@specialbeginnings.com
+tag:Full scope midwifery care with birth at our beautiful birth center or the hospital...Your choice.
+titleinlogo:TRUE
+img:special-beginnings.jpg
