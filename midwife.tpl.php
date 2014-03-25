@@ -1,7 +1,7 @@
 <div class="col-md-3" id="<?php print($midwife_id) ?>">
 	<?php if (isset($midwife['img'])): ?>
 		<a href="http://<?php print($midwife['web']); ?>">
-			<img title="<?php print($midwife['name']); ?>" class="img-responsive" src="midwives/logo/<?php print($midwife['img']); ?>" />
+			<img title="<?php print(strip_tags($midwife['name'])); ?>" class="img-responsive" src="midwives/logo/<?php print($midwife['img']); ?>" />
 		</a>
 	<?php endif; ?>
 
