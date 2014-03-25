@@ -1,4 +1,4 @@
-name:Susan Dodge, CNM
+name:Susan Dodge, <abbr class="initialism">CNM</abbr>
 addr1:Gambrills MD 20154
 phone:410-451-0057
 email:susan.midwife@gmail.com

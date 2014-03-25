@@ -1,11 +1,14 @@
 <div class="col-md-3" id="<?php print($midwife_id) ?>">
-	<h2><a href="http://<?php print($midwife['web']); ?>"><?php print($midwife['name']); ?></a></h2>
-
 	<?php if (isset($midwife['img'])): ?>
 		<a href="http://<?php print($midwife['web']); ?>">
-			<img class="img-responsive" src="midwives/logo/<?php print($midwife['img']); ?>" />
+			<img title="<?php print($midwife['name']); ?>" class="img-responsive" src="midwives/logo/<?php print($midwife['img']); ?>" />
 		</a>
 	<?php endif; ?>
+
+	<?php if (!isset($midwife['titleinlogo'])): ?>
+		<h2><a href="http://<?php print($midwife['web']); ?>"><?php print($midwife['name']); ?></a></h2>
+	<?php endif; ?>
+	<div class="clearfix"></div>
 
 	<div class="address">
 		<span class="glyphicon glyphicon-home">&nbsp;</span>

@@ -5,5 +5,5 @@ phone:301-674-9976
 fax:855-282-0727
 email:mamasmidwives@gmail.com
 web:www.mamasmidwives.com
-tag:State-of-the-Art Midwifery Care in Your Home (10-mile radius of Takoma/Silver Spring)
+tag:State-of-the-Art Midwifery Care in Your Home <small>(10-mile radius of Takoma/Silver Spring)</small>
 img:mamas.jpg
