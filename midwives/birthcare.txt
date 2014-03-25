@@ -7,3 +7,4 @@ email:midwives@birthcare.org
 web:www.birthcare.org
 tag:Since 1987...specializing in personalized <abbr class="initialism">GYN</abbr> care and happy birth days in your home or our Accredited Birth Center <small>(serving a 40mile radius of DC)</small>
 img:birthcare.jpg
+titleinlogo:TRUE
