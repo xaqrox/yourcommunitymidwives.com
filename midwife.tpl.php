@@ -36,11 +36,13 @@
 		</div>
 	<?php endif; ?>
 
-	<div class="email small">
-		<p>
-			<span class="glyphicon glyphicon-envelope">&nbsp;</span><a href="mailto:<?php print($midwife['email']); ?>"><?php print($midwife['email']); ?></a>
-		</p>
-	</div>
+	<?php if (isset($midwife['email'])): ?>
+		<div class="email small">
+			<p>
+				<span class="glyphicon glyphicon-envelope">&nbsp;</span><a href="mailto:<?php print($midwife['email']); ?>"><?php print($midwife['email']); ?></a>
+			</p>
+		</div>
+	<?php endif; ?>
 
 	<?php if (isset($midwife['web'])): ?>
 		<div class="web small">
