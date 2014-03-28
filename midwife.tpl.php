@@ -1,4 +1,6 @@
-<div class="col-md-3" id="<?php print($midwife_id) ?>">
+<div class="col-md-3 panel-default" id="<?php print($midwife_id) ?>">
+	<div class="panel-body">
+
 	<?php if (isset($midwife['img'])): ?>
 		<a href="http://<?php print($midwife['web']); ?>">
 			<img title="<?php print(strip_tags($midwife['name'])); ?>" class="img-responsive" src="midwives/logo/<?php print($midwife['img']); ?>" />
@@ -57,4 +59,5 @@
 			<span class="glyphicon glyphicon-comment">&nbsp;</span><?php print($midwife['tag']); ?>
 		</p>
 	</div>
+</div>
 </div>
