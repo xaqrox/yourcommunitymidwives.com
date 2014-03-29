@@ -23,7 +23,7 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="container">
 	<div class="row">
-		<div class="col-md-12 text-center small">
+		<div class="col-md-12 text-center">
 			<small class="pull-right">beta</small>
 			<h1>Your Community Midwives</h1>
 			<em>Proud sponsors of <a href="http://www.pbs.org/call-the-midwife/home/">Call the Midwife</a> on <a href="http://www.mpt.org/home/">Maryland Public Television</a>.</em>
