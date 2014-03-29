@@ -17,3 +17,12 @@ address {
 p {
 	margin-bottom: 3px;
 }
+
+#mamas h2 {
+	font-family: 'Courgette', cursive;
+}
+
+#tlcbirth h2 {
+	font-family: 'Tangerine', cursive;
+	font-size: 36px;
+}

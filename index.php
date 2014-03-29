@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Tangerine|Courgette' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <!--[if lt IE 7]>
