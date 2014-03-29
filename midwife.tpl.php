@@ -1,12 +1,28 @@
 <div class="col-md-3" id="<?php print($midwife_id) ?>">
 	<?php if (isset($midwife['img'])): ?>
-		<a href="http://<?php print($midwife['web']); ?>">
-			<img title="<?php print(strip_tags($midwife['name'])); ?>" class="img-responsive" src="midwives/logo/<?php print($midwife['img']); ?>" />
-		</a>
+		<?php if (isset($midwife['web'])): ?>
+			<a href="http://<?php print($midwife['web']); ?>">
+		<?php endif; ?>
+
+		<img title="<?php print(strip_tags($midwife['name'])); ?>" class="img-responsive" src="midwives/logo/<?php print($midwife['img']); ?>" />
+
+		<?php if (isset($midwife['web'])): ?>
+			</a>
+		<?php endif; ?>
 	<?php endif; ?>
 
 	<?php if (!isset($midwife['titleinlogo'])): ?>
-		<h2><a href="http://<?php print($midwife['web']); ?>"><?php print($midwife['name']); ?></a></h2>
+		<h2>
+			<?php if (isset($midwife['web'])): ?>
+				<a href="http://<?php print($midwife['web']); ?>">
+			<?php endif; ?>
+
+			<?php print($midwife['name']); ?>
+
+			<?php if (isset($midwife['web'])): ?>
+				</a>
+			<?php endif; ?>
+		</h2>
 	<?php endif; ?>
 	<div class="clearfix"></div>
 
