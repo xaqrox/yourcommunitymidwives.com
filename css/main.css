@@ -9,7 +9,7 @@
 }
 
 .midwife .header {
-	min-height: 140px;
+	min-height: 150px;
 }
 
 /* The ghost, nudged to maintain perfect centering */
@@ -26,27 +26,23 @@
 .header img {
 	display: inline-block;
 	vertical-align: middle;
-}
-
-.tag {
-	font-style: italic;
-}
-
-.address * {
-	float: left;
-}
-
-img {
 	margin:0 auto;
 }
 
-address {
+.tag .content {
+	font-style: italic;
+}
+
+.midwife .glyphicon, .midwife .content{
+	float: left;
 	margin-bottom: 3px;
 }
 
-p {
-	margin-bottom: 3px;
+.midwife .tag .content, .midwife .tag .glyphicon {
+	display: inline;
+	float: none;
 }
+
 
 #mamas h2 {
 	font-family: 'Courgette', cursive;

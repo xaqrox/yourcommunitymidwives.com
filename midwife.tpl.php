@@ -28,9 +28,9 @@
 
 	</div>
 
-	<div class="address">
+	<div class="address clearfix">
 		<span class="glyphicon glyphicon-home">&nbsp;</span>
-		<address class="small">
+		<address class="content small">
 			<?php print($midwife['addr1']); ?>
 			<br/>
 			<?php if (isset($midwife['addr2'])): ?>
@@ -38,41 +38,45 @@
 			<?php endif; ?>
 		</address>
 	</div>
-	<div class="clearfix"></div>
 
-	<div class="phone small">
-		<p>
-			<span class="glyphicon glyphicon-earphone">&nbsp;</span><?php print($midwife['phone']); ?>
-		</p>
+	<div class="phone small clearfix">
+		<span class="glyphicon glyphicon-earphone">&nbsp;</span>
+		<div class="content">
+			<?php print($midwife['phone']); ?>
+		</div>
 	</div>
 
 	<?php if (isset($midwife['fax'])): ?>
-		<div class="fax small">
-			<p>
-				<span class="glyphicon glyphicon-print">&nbsp;</span><?php print($midwife['fax']); ?>
-			</p>
+		<div class="fax small clearfix">
+			<span class="glyphicon glyphicon-print">&nbsp;</span>
+			<div class="content">
+				<?php print($midwife['fax']); ?>
+			</div>
 		</div>
 	<?php endif; ?>
 
 	<?php if (isset($midwife['email'])): ?>
-		<div class="email small">
-			<p>
-				<span class="glyphicon glyphicon-envelope">&nbsp;</span><a href="mailto:<?php print($midwife['email']); ?>"><?php print($midwife['email']); ?></a>
-			</p>
+		<div class="email small clearfix">
+			<span class="glyphicon glyphicon-envelope">&nbsp;</span>
+			<div class="content">
+				<a href="mailto:<?php print($midwife['email']); ?>"><?php print($midwife['email']); ?></a>
+			</div>
 		</div>
 	<?php endif; ?>
 
 	<?php if (isset($midwife['web'])): ?>
-		<div class="web small">
-			<p>
-				<span class="glyphicon glyphicon-globe">&nbsp;</span><a href="http://<?php print($midwife['web']); ?>"><?php print($midwife['web']); ?></a>
-			</p>
+		<div class="web small clearfix">
+			<span class="glyphicon glyphicon-globe">&nbsp;</span>
+			<div class="content">
+				<a href="http://<?php print($midwife['web']); ?>"><?php print($midwife['web']); ?></a>
+			</div>
 		</div>
 	<?php endif; ?>
 
-	<div class="tag small">
-		<p>
-			<span class="glyphicon glyphicon-comment">&nbsp;</span><?php print($midwife['tag']); ?>
-		</p>
+	<div class="tag small clearfix">
+		<span class="glyphicon glyphicon-comment">&nbsp;</span>
+		<div class="content">
+			<?php print($midwife['tag']); ?>
+		</div>
 	</div>
 </div>
