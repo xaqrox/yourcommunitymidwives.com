@@ -1,29 +1,32 @@
-<div class="col-md-3" id="<?php print($midwife['id']) ?>">
-	<?php if (isset($midwife['img'])): ?>
-		<?php if (isset($midwife['web'])): ?>
-			<a href="http://<?php print($midwife['web']); ?>">
+<div class="col-md-3 midwife" id="<?php print($midwife['id']) ?>">
+	<div class="header row text-center <?php if (isset($midwife['titleinlogo'])) print('no-title'); ?>">
+		<?php if (isset($midwife['img'])): ?>
+			<div class="logo">
+				<?php if (isset($midwife['web'])): ?>
+					<a href="http://<?php print($midwife['web']); ?>">
+				<?php endif; ?>
+
+				<img title="<?php print(strip_tags($midwife['name'])); ?>" class="img-responsive" src="midwives/logo/<?php print($midwife['img']); ?>" />
+
+				<?php if (isset($midwife['web'])): ?>
+					</a>
+				<?php endif; ?>
+			</div>
 		<?php endif; ?>
 
-		<img title="<?php print(strip_tags($midwife['name'])); ?>" class="img-responsive" src="midwives/logo/<?php print($midwife['img']); ?>" />
+			<h2 class="<?php if (isset($midwife['titleinlogo'])) print('sr-only'); ?>">
+				<?php if (isset($midwife['web'])): ?>
+					<a href="http://<?php print($midwife['web']); ?>">
+				<?php endif; ?>
 
-		<?php if (isset($midwife['web'])): ?>
-			</a>
-		<?php endif; ?>
-	<?php endif; ?>
+				<?php print($midwife['name']); ?>
 
-		<h2 class="<?php if (isset($midwife['titleinlogo'])) print('sr-only'); ?>">
-			<?php if (isset($midwife['web'])): ?>
-				<a href="http://<?php print($midwife['web']); ?>">
-			<?php endif; ?>
+				<?php if (isset($midwife['web'])): ?>
+					</a>
+				<?php endif; ?>
+			</h2>
 
-			<?php print($midwife['name']); ?>
-
-			<?php if (isset($midwife['web'])): ?>
-				</a>
-			<?php endif; ?>
-		</h2>
-
-	<div class="clearfix"></div>
+	</div>
 
 	<div class="address">
 		<span class="glyphicon glyphicon-home">&nbsp;</span>
