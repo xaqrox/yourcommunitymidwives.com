@@ -1,8 +1,7 @@
-name:Community of Hope Family Health and Birth Center
+name:Family Health and Birth Center
 addr1:801 17th Street NE
 addr2:Washington DC 20002
 phone:202-398-5520
 web:www.communityofhopedc.org
 tag:Midwifery and Family care in the heart of Washington DC
-titleinlogo:TRUE
 img:coh.jpg
