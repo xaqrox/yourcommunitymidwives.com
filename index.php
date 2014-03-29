@@ -34,22 +34,19 @@
 <?php
 
 // Open midwives directory.
-$midwives = opendir('midwives');
-// Initialize counter.
-$i = 0;
+$midwives_dir = opendir('midwives');
 
-while ($midwife_filename = readdir($midwives)) {
+while ($midwife_filename = readdir($midwives_dir)) {
 	// If not a text file, go to the next file.
 	if (strpos($midwife_filename, 'txt') === FALSE) {
 		continue;
 	}
 
-	// On the first go around and every fourth after, start a new row.
-	if ($i % 4 == 0) { ?> <div class="row"> <?php }
+	$midwife = array();
 
 	// Get the id by stripping off the file extension.
-	$midwife_id = array_shift(explode('.', $midwife_filename));
-	
+	$midwife['id'] = array_shift(explode('.', $midwife_filename));
+
 	// Open a file hadler for this midwife file.
 	$midwife_file = fopen('midwives/' . $midwife_filename, 'r');
 
@@ -64,11 +61,23 @@ while ($midwife_filename = readdir($midwives)) {
 	}
 	fclose($midwife_file);
 
+	// Index midwives by display name.
+	$midwives[$midwife['name']] = $midwife;
+}
+
+closedir($midwives_dir);
+
+ksort($midwives);
+
+// Initialize counter.
+$i = 0;
+
+foreach ($midwives as $midwife) {
+	// On the first go around and every fourth after, start a new row.
+	if ($i % 4 == 0) { ?> <div class="row"> <?php }
+
 	// Include the midwife template, which assumes the array built above.
 	include('midwife.tpl.php');
-
-	// Get rid of leftover values in case the next midwife doesn't use some fields.
-	unset($midwife);
 
 	// Increment the counter.
 	$i = $i + 1;
@@ -76,7 +85,6 @@ while ($midwife_filename = readdir($midwives)) {
 	// Check if a new row is about to start, and end this row.
 	if ($i % 4 == 0) { ?> </div> <?php }
 }
-closedir($midwives);
 
 // If the last row ended on a number not divisible by 4, end the row.
 if ($i % 4 != 0) { ?> </div> <?php }
