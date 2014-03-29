@@ -4,4 +4,4 @@ addr2:Washington DC 20002
 phone:202-398-5520
 web:www.communityofhopedc.org
 tag:Midwifery and Family care in the heart of Washington DC
-img:coh.jpg
+img:coh.png
