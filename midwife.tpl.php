@@ -11,8 +11,7 @@
 		<?php endif; ?>
 	<?php endif; ?>
 
-	<?php if (!isset($midwife['titleinlogo'])): ?>
-		<h2>
+		<h2 class="<?php if (isset($midwife['titleinlogo'])) print('sr-only'); ?>">
 			<?php if (isset($midwife['web'])): ?>
 				<a href="http://<?php print($midwife['web']); ?>">
 			<?php endif; ?>
@@ -23,7 +22,7 @@
 				</a>
 			<?php endif; ?>
 		</h2>
-	<?php endif; ?>
+
 	<div class="clearfix"></div>
 
 	<div class="address">
