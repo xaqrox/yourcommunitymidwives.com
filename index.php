@@ -90,11 +90,11 @@ if ($i % 4 != 0) { ?> </div> <?php }
 ?>
       <hr>
 
-      <footer>
+      <footer class="small">
 	<ul class="list-inline">
 		<li>Icons by <a href="http://glyphicons.com">Glyphicons</a></li>
 		<li>Made with&nbsp;<span class="glyphicon glyphicon-heart"></span>&nbsp;by <a href="http://xaqrox.com">XAQ</a></li>
-		<li>Version 1.beta3 (<a href="https://github.com/xaqrox/yourcommunitymidwives.com/tree/1.beta3" target="_blank">View on GitHub</a>)</li>
+		<li>Version 1.beta4 (<a href="https://github.com/xaqrox/yourcommunitymidwives.com/tree/1.beta4" target="_blank">View on GitHub</a>)</li>
 	</ul>
       </footer>
     </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
