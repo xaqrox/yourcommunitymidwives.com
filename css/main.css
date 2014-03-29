@@ -4,10 +4,6 @@
 	margin: 5px 0;
 }
 
-.tag {
-	font-style: italic;
-}
-
 .midwife .header {
 	min-height: 150px;
 }
@@ -29,20 +25,25 @@
 	margin:0 auto;
 }
 
-.tag .content {
-	font-style: italic;
-}
-
 .midwife .glyphicon, .midwife .content{
 	float: left;
 	margin-bottom: 3px;
 }
 
-.midwife .tag .content, .midwife .tag .glyphicon {
-	display: inline;
-	float: none;
+.midwife .content {
+	padding-left: 8px;
 }
 
+.midwife .address .content {
+	padding-left: 5px;
+}
+
+.midwife .tag .content {
+	font-style: italic;
+	padding-left: 20px;
+	position: relative;
+	top: -15px;
+}
 
 #mamas h2 {
 	font-family: 'Courgette', cursive;

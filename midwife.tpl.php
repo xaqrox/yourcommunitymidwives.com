@@ -29,7 +29,7 @@
 	</div>
 
 	<div class="address clearfix">
-		<span class="glyphicon glyphicon-home">&nbsp;</span>
+		<span class="glyphicon glyphicon-home"></span>
 		<address class="content small">
 			<?php print($midwife['addr1']); ?>
 			<br/>
@@ -40,7 +40,7 @@
 	</div>
 
 	<div class="phone small clearfix">
-		<span class="glyphicon glyphicon-earphone">&nbsp;</span>
+		<span class="glyphicon glyphicon-earphone"></span>
 		<div class="content">
 			<?php print($midwife['phone']); ?>
 		</div>
@@ -48,7 +48,7 @@
 
 	<?php if (isset($midwife['fax'])): ?>
 		<div class="fax small clearfix">
-			<span class="glyphicon glyphicon-print">&nbsp;</span>
+			<span class="glyphicon glyphicon-print"></span>
 			<div class="content">
 				<?php print($midwife['fax']); ?>
 			</div>
@@ -57,7 +57,7 @@
 
 	<?php if (isset($midwife['email'])): ?>
 		<div class="email small clearfix">
-			<span class="glyphicon glyphicon-envelope">&nbsp;</span>
+			<span class="glyphicon glyphicon-envelope"></span>
 			<div class="content">
 				<a href="mailto:<?php print($midwife['email']); ?>"><?php print($midwife['email']); ?></a>
 			</div>
@@ -66,7 +66,7 @@
 
 	<?php if (isset($midwife['web'])): ?>
 		<div class="web small clearfix">
-			<span class="glyphicon glyphicon-globe">&nbsp;</span>
+			<span class="glyphicon glyphicon-globe"></span>
 			<div class="content">
 				<a href="http://<?php print($midwife['web']); ?>"><?php print($midwife['web']); ?></a>
 			</div>
@@ -74,7 +74,7 @@
 	<?php endif; ?>
 
 	<div class="tag small clearfix">
-		<span class="glyphicon glyphicon-comment">&nbsp;</span>
+		<span class="glyphicon glyphicon-comment"></span>
 		<div class="content">
 			<?php print($midwife['tag']); ?>
 		</div>
