@@ -39,6 +39,7 @@
 }
 
 .midwife .tag .content {
+	width: 100%;
 	font-style: italic;
 	padding-left: 20px;
 	position: relative;
