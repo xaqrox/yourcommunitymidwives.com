@@ -1,4 +1,4 @@
-name:Family Health and Birth Center
+name:Family Health &amp; Birth Center
 addr1:801 17th Street NE
 addr2:Washington DC 20002
 phone:202-398-5520
