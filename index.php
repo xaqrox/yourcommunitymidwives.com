@@ -61,7 +61,7 @@ while ($midwife_filename = readdir($midwives_dir)) {
 	fclose($midwife_file);
 
 	// Index midwives by display name.
-	$midwives[$midwife['name']] = $midwife;
+	$midwives[strip_tags($midwife['name'])] = $midwife;
 }
 
 closedir($midwives_dir);
