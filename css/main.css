@@ -46,13 +46,27 @@
 	top: -15px;
 }
 
+#mamas .header * {
+	float: left;
+}
+
 #mamas h2 {
+	padding: 28px 0 0 5px;
 	font-family: 'Courgette', cursive;
 }
 
 #tlcbirth h2 {
+	padding: 28px 0 0 5px;
 	font-family: 'Tangerine', cursive;
 	font-size: 36px;
+}
+
+#tlcbirth .header * {
+	float: left;
+}
+
+#coh .header img {
+	padding-top: 15px;
 }
 
 #coh h2 {
