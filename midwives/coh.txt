@@ -3,5 +3,5 @@ addr1:801 17th Street NE
 addr2:Washington DC 20002
 phone:202-398-5520
 web:www.communityofhopedc.org
-tag:Midwifery and Family care in the heart of Washington DC
+tag:Midwifery and Family care in the heart of Washington <span class="initialism">D.C.</span>
 img:coh.png

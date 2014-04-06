@@ -5,6 +5,6 @@ phone:703-549-5070
 fax:703-549-4821
 email:midwives@birthcare.org
 web:www.birthcare.org
-tag:Since 1987...specializing in personalized <abbr class="initialism">GYN</abbr> care and happy birth days in your home or our Accredited Birth Center <small>(serving a 40mile radius of DC)</small>
+tag:Since 1987...specializing in personalized <abbr class="initialism">GYN</abbr> care and happy birth days in your home or our Accredited Birth Center <small>(serving a 40mile radius of <span class="initialism">D.C.</span>)</small>
 img:birthcare.jpg
 titleinlogo:TRUE
