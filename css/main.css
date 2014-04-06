@@ -4,12 +4,12 @@
 	margin: 5px 0;
 }
 
-.midwife .header {
+.midwife .header-wrapper {
 	min-height: 120px;
 }
 
 /* The ghost, nudged to maintain perfect centering */
-.midwife .header.no-title:before {
+.midwife .header-wrapper:before {
 	content: '';
 	display: inline-block;
 	height: 100%;
@@ -19,9 +19,12 @@
 
 /* The element to be centered, can
  *    also be of any width and height */ 
-.header img {
+.header {
 	display: inline-block;
 	vertical-align: middle;
+}
+
+.header img {
 	margin:0 auto;
 }
 
