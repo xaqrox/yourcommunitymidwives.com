@@ -53,8 +53,8 @@ while ($midwife_filename = readdir($midwives_dir)) {
 	while ($line = fgets($midwife_file)) {
 		// split it into a field name and a value,
 		$pair = explode(':', $line);
-		$field = $pair[0];
-		$value = $pair[1];
+		$field = array_shift($pair);
+		$value = implode(':', $pair);
 		// and store it in an array.
 		$midwife[$field] = $value;
 	}
