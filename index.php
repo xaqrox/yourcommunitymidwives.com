@@ -37,7 +37,7 @@ $midwives_dir = opendir('midwives');
 
 while ($midwife_filename = readdir($midwives_dir)) {
 	// If not a text file, go to the next file.
-	if (strpos($midwife_filename, 'txt') === FALSE) {
+	if (strpos($midwife_filename, 'txt') === FALSE || strpos($midwife_filename, '~') !== FALSE) {
 		continue;
 	}
 
